@@ -1,0 +1,211 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background: linear-gradient(-45deg, #c4e9f3, #77baec, #111baa);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  height: 100vh;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  display: flex;
+  background-color: rgba(17, 27, 170, 0.4);
+  padding: 1rem;
+  width: 100%;
+}
+.imagen {
+  width: 30%;
+  /* object-fit: cover; */
+}
+img {
+  width: 200px;
+}
+
+nav {
+  width: 60%;
+  display: flex;
+  justify-content: right;
+  vertical-align: middle;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul,
+a {
+  color: #fff !important;
+  list-style: none !important;
+  text-decoration: none !important;
+  margin: 0px 1rem !important;
+}
+
+li {
+  height: fit-content;
+  transition: transform 0.1s ease;
+}
+
+td {
+  font-size: 0.8rem;
+}
+
+li:hover {
+  transform: scale(1.1);
+}
+
+.puertas {
+  height: 40px !important;
+  width: 40px !important;
+}
+
+#container-table {
+  width: 90%;
+  padding: 1rem !important;
+  border-radius: 10px !important;
+  display: flexbox !important;
+  margin: auto;
+  background-color: rgba(119, 186, 236, 1);
+  color: #fff;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(-45deg, #111baa, transparent, transparent);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  box-shadow: 2px 3px 3px #252525;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+th {
+  box-shadow: 0px 2px 3px #252525;
+  padding: 2px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+ul li a {
+  vertical-align: middle;
+}
+
+tr {
+  margin-top: 1rem;
+  border-color: #252525;
+}
+
+.busqueda {
+  justify-content: center;
+  display: flex;
+  margin: 40px auto 1.3rem;
+}
+
+.text-search {
+  margin-right: 0.7rem;
+  width: 15rem;
+  outline: none;
+  border-color: transparent;
+  border-radius: 7px;
+  background-color: transparent;
+  border-bottom-color: #2116be;
+}
+
+.btn-search {
+  padding: 5px;
+  border-color: transparent;
+  border-radius: 30px;
+  /* para ponerle segundos de retardo a la animacion */
+  transition: background-color 1.3s ease;
+  font-weight: 600;
+}
+.btn-search:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  /* Para agrandar el boton "transform: scale(1.1);" */
+  transform: scale(1.1);
+}
+
+table {
+  margin-top: 30px;
+}
+
+@media (max-whidth: 1200px) {
+  table {
+    width: 100%;
+  }
+}
+
+/* Ventana Modal */
+.modal-content {
+  background-color: rgba(24, 93, 184, 0.9) !important;
+}
+.btn-close {
+  transition: 0.5s;
+}
+
+.btn-close:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+/* texto de modal */
+
+.Almacen, .Producto {
+  text-align: end;
+  margin: auto;
+  display: block;
+}
+
+.container-modal {
+  display: flex;
+}
+
+.texto-modal {
+  width: 58%;
+  margin: 0.5rem 0px;
+  border-radius: 8px;
+  border-color: transparent;
+  outline: none;
+  font-size: 1rem;
+}
+
+.texto-modal-label {
+  font-size: 0.8rem;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Selecttores */
+select{
+  width: 58%;
+  background-color:#fff;
+  border-radius: 10px;
+  border-color: transparent;
+  outline: none;
+  margin: .2rem 0px;
+  vertical-align: middle;
+  margin: 5px;
+}

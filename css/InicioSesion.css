@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("../img/fondo.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+}
+
+.container {
+  /* Para hacer el fondo borroso 'backdrop-filter: blur(30px);' */
+  backdrop-filter: blur(30px);
+  box-shadow: 2px 1px 5px #000;
+  display: flex;
+  width: 50%;
+  margin: 10% auto;
+  vertical-align: middle;
+  padding: 0.7rem;
+  border-radius: 17px;
+}
+
+.logo {
+  width: 100%;
+  display: inline-block;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  margin: auto;
+}
+.sesion {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+input {
+  display: flex;
+  outline: none;
+  margin: 0.3rem auto 0px;
+}
+
+h1 {
+  font-family: "Fira Sans", sans-serif;
+  color: aliceblue;
+}
+
+label {
+  color: #fff;
+}
+
+.texto {
+  border-radius: 5px;
+  border-color: transparent;
+  outline: none;
+  height: 1rem;
+}
+
+.btn-sesion {
+  background-color: transparent;
+  border-color: transparent;
+  padding: 3px;
+  transition: background-color 1s ease;
+  transition: transform 0.5s ease;
+  border-radius: 5px;
+  font-weight: 900;
+  color: rgb(80, 48, 223);
+}
+.btn-sesion:hover {
+  background-color: rgba(47, 47, 218, 0.76);
+  cursor: pointer;
+  fill-opacity: blur(10px);
+  border-radius: 5px;
+  transform: scale(1.1);
+  color: rgb(68, 202, 226);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(80, 48, 223);
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1150px) {
+  body {
+    background-image: url("../img/fondo.webp");
+    background-repeat: repeat-y;
+    background-size: cover;
+    object-fit: fill;
+  }
+}
+@media (max-width: 900px) {
+  .logo {
+    visibility: hidden;
+    width: 1px;
+  }
+  .container {
+    backdrop-filter: blur(30px);
+    box-shadow: 2px 1px 5px #000;
+    display: flex;
+    width: 50%;
+    margin: 10% auto;
+    vertical-align: middle;
+    /* background-color: rgb(104, 218, 226); */
+    padding: 0.7rem;
+    border-radius: 17px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 300px) {
+  input {
+    width: 100px;
+  }
+}
+
+
+select{
+  margin: 5px 0px 1rem;
+  border-radius: 5px;
+  border-color: transparent;
+  outline: none;
+width: 50%;
+}
